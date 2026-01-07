@@ -222,19 +222,19 @@ management_group_settings = {
   subscription_placement = {
     identity = {
       subscription_id       = "$${subscription_id_identity}"
-      management_group_name = "contoso-identity"
+      management_group_name = "zava-identity"
     }
     connectivity = {
       subscription_id       = "$${subscription_id_connectivity}"
-      management_group_name = "contoso-connectivity"
+      management_group_name = "zava-connectivity"
     }
     management = {
       subscription_id       = "$${subscription_id_management}"
-      management_group_name = "contoso-management"
+      management_group_name = "zava-management"
     }
     security = {
       subscription_id       = "$${subscription_id_security}"
-      management_group_name = "contoso-security"
+      management_group_name = "zava-security"
     }
   }
   policy_assignments_to_modify = {
