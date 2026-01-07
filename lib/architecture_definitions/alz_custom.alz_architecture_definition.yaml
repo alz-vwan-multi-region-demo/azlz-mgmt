@@ -1,0 +1,78 @@
+name: alz_custom
+management_groups:
+  - id: contoso
+    display_name: Contoso
+    archetypes:
+      - root_custom
+    exists: false
+    parent_id: null
+
+  - id: contoso-platform
+    display_name: Contoso Platform
+    archetypes:
+      - platform_custom
+    exists: false
+    parent_id: contoso
+
+  - id: contoso-landingzones
+    display_name: Contoso Landing Zones
+    archetypes:
+      - landing_zones_custom
+    exists: false
+    parent_id: contoso
+  
+  - id: contoso-corp
+    display_name: Contoso Corp
+    archetypes:
+      - corp_custom
+    exists: false
+    parent_id: contoso-landingzones
+
+  - id: contoso-online
+    display_name: Contoso Online
+    archetypes:
+      - online_custom
+    exists: false
+    parent_id: contoso-landingzones
+
+  - id: contoso-sandbox
+    display_name: Contoso Sandbox
+    archetypes:
+      - sandbox_custom
+    exists: false
+    parent_id: contoso
+
+  - id: contoso-security
+    display_name: Contoso Security
+    archetypes:
+      - security_custom
+    exists: false
+    parent_id: contoso-platform
+  
+  - id: contoso-management
+    display_name: Contoso Management
+    archetypes:
+      - management_custom
+    exists: false
+    parent_id: contoso-platform
+
+  - id: contoso-connectivity
+    display_name: Contoso Connectivity
+    archetypes:
+      - connectivity_custom
+    exists: false
+    parent_id: contoso-platform
+
+  - id: contoso-identity
+    display_name: Contoso Identity
+    archetypes:
+      - identity_custom
+    exists: false
+    parent_id: contoso-platform
+
+  - id: contoso-decommissioned
+    display_name: Contoso Decommissioned
+    archetypes:
+      - decommissioned_custom
+    exists: false
+    parent_id: contoso
