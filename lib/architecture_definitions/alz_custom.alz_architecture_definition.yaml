@@ -1,78 +1,78 @@
 name: alz_custom
 management_groups:
-  - id: contoso
-    display_name: Contoso
+  - id: zava-root
+    display_name: Zava
     archetypes:
       - root_custom
     exists: false
     parent_id: null
 
-  - id: contoso-platform
-    display_name: Contoso Platform
+  - id: zava-platform
+    display_name: Zava Platform
     archetypes:
       - platform_custom
     exists: false
-    parent_id: contoso
+    parent_id: zava-root
 
-  - id: contoso-landingzones
-    display_name: Contoso Landing Zones
+  - id: zava-landingzones
+    display_name: Zava Landing Zones
     archetypes:
       - landing_zones_custom
     exists: false
-    parent_id: contoso
-  
-  - id: contoso-corp
-    display_name: Contoso Corp
+    parent_id: zava-root
+
+  - id: zava-corp
+    display_name: Zava Corp
     archetypes:
       - corp_custom
     exists: false
-    parent_id: contoso-landingzones
+    parent_id: zava-landingzones
 
-  - id: contoso-online
-    display_name: Contoso Online
+  - id: zava-online
+    display_name: Zava Online
     archetypes:
       - online_custom
     exists: false
-    parent_id: contoso-landingzones
+    parent_id: zava-landingzones
 
-  - id: contoso-sandbox
-    display_name: Contoso Sandbox
+  - id: zava-sandbox
+    display_name: Zava Sandbox
     archetypes:
       - sandbox_custom
     exists: false
-    parent_id: contoso
+    parent_id: zava-root
 
-  - id: contoso-security
-    display_name: Contoso Security
+  - id: zava-security
+    display_name: Zava Security
     archetypes:
       - security_custom
     exists: false
-    parent_id: contoso-platform
-  
-  - id: contoso-management
-    display_name: Contoso Management
+    parent_id: zava-platform
+
+  - id: zava-management
+    display_name: Zava Management
     archetypes:
       - management_custom
     exists: false
-    parent_id: contoso-platform
+    parent_id: zava-platform
 
-  - id: contoso-connectivity
-    display_name: Contoso Connectivity
+  - id: zava-connectivity
+    display_name: Zava Connectivity
     archetypes:
       - connectivity_custom
     exists: false
-    parent_id: contoso-platform
+    parent_id: zava-platform
 
-  - id: contoso-identity
-    display_name: Contoso Identity
+  - id: zava-identity
+    display_name: Zava Identity
     archetypes:
       - identity_custom
     exists: false
-    parent_id: contoso-platform
+    parent_id: zava-platform
 
-  - id: contoso-decommissioned
-    display_name: Contoso Decommissioned
+  - id: zava-decommissioned
+    display_name: Zava Decommissioned
     archetypes:
       - decommissioned_custom
     exists: false
-    parent_id: contoso
+    parent_id: zava-root
